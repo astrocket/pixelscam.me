@@ -1,0 +1,35 @@
+{
+  "name": "pixelscam.me",
+  "version": "0.1.0",
+  "description": "Crypto circus for ponzies, scammers, dumpers and you.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astrocket/pixelscam.me.git"
+  },
+  "keywords": [
+    "crypto",
+    "blockchian",
+    "dapp",
+    "game",
+    "ad"
+  ],
+  "author": "Scammers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/astrocket/pixelscam.me/issues"
+  },
+  "homepage": "https://github.com/astrocket/pixelscam.me#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "next": "^6.1.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
