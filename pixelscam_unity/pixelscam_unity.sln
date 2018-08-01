@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pixelscam_unity", "Assembly-CSharp.csproj", "{064A3792-98B1-E2A3-7D79-0BE84FBE60CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pixelscam_unity", "Assembly-CSharp-Editor.csproj", "{24C830A3-33B1-63CC-644A-3E51DF35565F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pixelscam_unity", "Assembly-CSharp-Editor-firstpass.csproj", "{263DD175-770E-E64C-09A9-EB5278B28919}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{064A3792-98B1-E2A3-7D79-0BE84FBE60CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064A3792-98B1-E2A3-7D79-0BE84FBE60CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064A3792-98B1-E2A3-7D79-0BE84FBE60CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064A3792-98B1-E2A3-7D79-0BE84FBE60CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C830A3-33B1-63CC-644A-3E51DF35565F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C830A3-33B1-63CC-644A-3E51DF35565F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C830A3-33B1-63CC-644A-3E51DF35565F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C830A3-33B1-63CC-644A-3E51DF35565F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{263DD175-770E-E64C-09A9-EB5278B28919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263DD175-770E-E64C-09A9-EB5278B28919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263DD175-770E-E64C-09A9-EB5278B28919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263DD175-770E-E64C-09A9-EB5278B28919}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
