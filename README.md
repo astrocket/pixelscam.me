@@ -16,6 +16,8 @@ npm install && npm run dev
 ### For Unity3d
 1. Signup Unity3d
 2. Add [2D Game Kit](https://assetstore.unity.com/packages/essentials/tutorial-projects/2d-game-kit-107098) to yours from asset store
+3. Open unity project placed in /static/unity and Build
+4. Ensure build output including `UnityLoader.js` is in /static/unity/Build
 
 ## Resources
 - UI framework : [mobile.ant.design](https://mobile.ant.design/)

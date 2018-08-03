@@ -10,7 +10,7 @@ class Index extends Component {
       isLoading: false
     }
     this.unityContent = new UnityContent(
-      "/static/unity/Build/build.json",
+      "/static/unity/Build/Build.json",
       "/static/unity/Build/UnityLoader.js"
     );
   }
