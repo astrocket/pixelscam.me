@@ -1,7 +1,7 @@
 .next
 node_modules/*
 
-pixelscam_unity/Temp/*
-pixelscam_unity/Library/metadata/*
-pixelscam_unity/Library/*Cache/*
-pixelscam_unity/Library/shadercompiler*.log
+static/unity/Temp/*
+static/unity/Library/metadata/*
+static/unity/Library/*Cache/*
+static/unity/Library/shadercompiler*.log
