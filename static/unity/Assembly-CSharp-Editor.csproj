@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{24C830A3-33B1-63CC-644A-3E51DF35565F}</ProjectGuid>
+    <ProjectGuid>{33C3DCDC-76CB-1FCD-751B-4E7E18D0E2DF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -90,28 +90,28 @@
     <Compile Include="Assets\2DGamekit\Utilities\Editor\NewSceneCreator.cs" />
     <Compile Include="Assets\2DGamekit\Utilities\Editor\RuleTileEditor.cs" />
     <Reference Include="Cinemachine">
-      <HintPath>/Users/hexoul/Documents/pixelscam/pixelscam_unity/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/hexoul/Documents/pixelscam/pixelscam_unity/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/hexoul/Documents/pixelscam/pixelscam_unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/hexoul/Documents/pixelscam/pixelscam_unity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>/Users/hexoul/Documents/pixelscam/pixelscam_unity/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>/Users/hexoul/Documents/pixelscam/pixelscam_unity/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>/Users/hexoul/Documents/pixelscam/pixelscam_unity/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/hexoul/Documents/pixelscam/pixelscam_unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -407,11 +407,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{064A3792-98B1-E2A3-7D79-0BE84FBE60CA}</Project>
+      <Project>{C3DA89E1-70C6-7D6C-993E-C8F831D35880}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{263DD175-770E-E64C-09A9-EB5278B28919}</Project>
+      <Project>{5C37612B-AF80-25DB-739D-B40D9EBFE347}</Project>
       <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
