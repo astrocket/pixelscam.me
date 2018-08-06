@@ -27,10 +27,12 @@
   },
   "homepage": "https://github.com/astrocket/pixelscam.me#readme",
   "dependencies": {
+    "@zeit/next-sass": "^0.2.0",
     "antd-mobile": "^2.2.2",
     "babel-polyfill": "^6.26.0",
     "express": "^4.16.3",
     "next": "^6.1.1",
+    "node-sass": "^4.9.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-unity-webgl": "^7.0.6"

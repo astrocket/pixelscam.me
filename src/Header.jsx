@@ -13,7 +13,7 @@ class AppHeader extends Component {
 
         return (
             <div className="header">
-              <h1>header</h1>
+              <h6>header</h6>
             </div>
         )
     }

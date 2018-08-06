@@ -29,7 +29,7 @@ const styles = {
     container: {
         position: 'fixed',
         background: '#fafafa',
-        opacity: '0.9',
+        opacity: '0.5',
         bottom: '0px',
         left: '0px',
         borderTop: '1px solid #ebebeb',
