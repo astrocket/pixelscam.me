@@ -35,7 +35,7 @@ const styles = {
         borderTop: '1px solid #ebebeb',
         borderRight: '1px solid #ebebeb',
         padding: '20px',
-        width: '100vw',
+        width: '50vw',
         height: '20vh',
         maxHeight: '20vh',
         overflowY: 'scroll'
