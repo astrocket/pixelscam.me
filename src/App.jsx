@@ -6,7 +6,7 @@ import AppFooter from './Footer.jsx'
 import {
   AppProvider, AppConsumer, appContext
 } from './contexts/AppContext'
-//import 'antd-mobile/dist/antd-mobile.css'
+import "../static/assets/styles/application.scss"
 
 const ProviderWrapper = ({ contexts, children, globalProps }) => contexts.reduce(
   (prev, context) => React.createElement(context, {
@@ -29,7 +29,7 @@ class App extends Component {
       <ProviderWrapper contexts={[AppProvider]} globalProps={{
         params: appProps.params,
       }}>
-        <div className="application-container">
+        <div className="app-container">
           {!this.props.hideHeader && <AppHeader />}
           {this.props.children}
           {!this.props.hideFooter && <AppFooter />}
