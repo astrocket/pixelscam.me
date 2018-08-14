@@ -5,12 +5,16 @@ const { Provider, Consumer: AppConsumer } = Context
 class AppProvider extends Component {
     state = {
         sampleData: false,
+        gameLoading: true,
     }
 
     actions = {
         setSampleData: (sampleData) => {
             this.setState({ sampleData });
-        }
+        },
+        setGameLoading: (gameLoading) => {
+          this.setState({ gameLoading });
+        },
     }
 
     apis = {

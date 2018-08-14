@@ -29,13 +29,13 @@ const styles = {
     container: {
         position: 'fixed',
         background: '#fafafa',
-        opacity: '0.9',
+        opacity: '0.5',
         bottom: '0px',
         left: '0px',
         borderTop: '1px solid #ebebeb',
         borderRight: '1px solid #ebebeb',
         padding: '20px',
-        width: '100vw',
+        width: '50vw',
         height: '20vh',
         maxHeight: '20vh',
         overflowY: 'scroll'
