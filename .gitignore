@@ -1,7 +1,18 @@
 .next
 node_modules/*
 
-static/unity/Temp/*
 static/unity/Library/metadata/*
 static/unity/Library/*Cache/*
 static/unity/Library/shadercompiler*.log
+static/unity/[Tt]emp/
+static/unity/[Oo]bj/
+static/unity/.vs/
+static/unity/**/ExportedObj/
+static/unity/**/*.suo
+static/unity/**/*.tmp
+static/unity/**/*.pdb
+static/unity/**/*.opendb
+static/unity/**/*.pidb.meta
+static/unity/**/*.pdb.meta
+static/unity/**/sysinfo.txt
+static/unity/**/*.meta
