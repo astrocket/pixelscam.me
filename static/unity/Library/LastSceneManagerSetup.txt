@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/2DGamekit/Scenes/UI/UIMenus.unity
+- path: Assets/ClickerGame/Scenes/game.unity
   isLoaded: 1
   isActive: 1
