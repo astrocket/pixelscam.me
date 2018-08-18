@@ -10,18 +10,17 @@ public class CurrencyManager : MonoBehaviour {
 		}
 	}
 
-	void Awake(){
+	void Awake() {
 		CreateInstance ();
 	}
 
-
-		void CreateInstance(){
+	void CreateInstance() {
 		if (instance == null) {
 			instance = this;
 		}
 	}
 		
-	public string GetCurrencyIntoString(float valueToConvert, bool currencyPerSec, bool currencyPerClick ){
+	public string GetCurrencyIntoString(float valueToConvert, bool currencyPerSec, bool currencyPerClick ) {
 		string converted;
 		if (valueToConvert >= 1000000000000000000) {
 			converted = (valueToConvert / 1000000000000000000f).ToString ("f2") + "Qui";
@@ -40,13 +39,14 @@ public class CurrencyManager : MonoBehaviour {
 		else if (valueToConvert >= 1000) {
 			converted = (valueToConvert / 1000f).ToString ("f2") + "K";
 		}
-
 		else {
 			converted = "" + valueToConvert;
 		}
-		if(currencyPerSec == true) {
+
+		if (currencyPerSec == true) {
 			converted = converted + " CPC";
 		}
+		
 		if (currencyPerClick == true) {
 			converted = converted + " CPS";
 		}

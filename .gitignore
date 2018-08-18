@@ -3,6 +3,7 @@ node_modules/*
 
 static/unity/Library/metadata/*
 static/unity/Library/*Cache/*
+static/unity/Library/*.json
 static/unity/Library/shadercompiler*.log
 static/unity/[Tt]emp/
 static/unity/[Oo]bj/

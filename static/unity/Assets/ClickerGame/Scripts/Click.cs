@@ -9,24 +9,20 @@ public class Click : MonoBehaviour {
 	public int goldperclick = 1;
 	public float costmultiplier = 2.00f;
 
-	void Start()
-	{
+	void Start() {
 		goldDisplay = GameObject.Find("GoldDisplay").GetComponent<UnityEngine.UI.Text>();
 	}
 
-	void Awake()
-	{
+	void Awake() {
 
 	}
 
-	void  Update()
-	{
+	void  Update() {
 		goldDisplay.text = "Cookie: " + CurrencyManager.Instance.GetCurrencyIntoString(gold ,false ,false);
 		GPC.text = "CPC: " + CurrencyManager.Instance.GetCurrencyIntoString(goldperclick ,true ,false);
 	}
 
-	public void Clciked()
-	{
+	public void Clciked() {
 		gold += goldperclick;
 	}
 }
