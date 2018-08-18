@@ -16,20 +16,11 @@ public class ItemManager : MonoBehaviour {
 
 	void Start() {
 		baseCost = cost; 
-		_slider = GetComponentInChildren<Slider> ();
+		_slider = GetComponentInChildren<Slider>();
 	}
 
 	void Update() {
 		itemInfo.text = itemName + "\nCost: "+cost+"\nGold: "+tickValue+"/s";
-
-		/*if (click.gold >= cost) {
-			GetComponent<Image> ().color = affordable;
-		} else {
-			GetComponent<Image> ().color = standard;
-			
-		} 
-		*/
-
 		_slider.value = click.gold / cost * 100;
 	}
 

@@ -9,7 +9,7 @@ public class GoldPerSec : MonoBehaviour {
 	public ItemManager[] items;
 
 	void Start() {
-		StartCoroutine (AutoTick ());
+		StartCoroutine(AutoTick());
 	}
 
 	void Update() {
