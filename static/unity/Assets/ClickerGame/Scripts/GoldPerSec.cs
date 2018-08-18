@@ -8,15 +8,15 @@ public class GoldPerSec : MonoBehaviour {
 	public Click click;
 	public ItemManager[] items;
 
-	void Start(){
+	void Start() {
 		StartCoroutine (AutoTick ());
 	}
-	void Update(){
+
+	void Update() {
 		gpsDisplay.text = GetGoldPerSec () +" cookie/sec";
-
-
 	}
-	public int GetGoldPerSec(){
+
+	public int GetGoldPerSec() {
 		int tick = 0;
 		foreach (ItemManager item in items) {
 			tick += item.count * item.tickValue;
@@ -24,18 +24,14 @@ public class GoldPerSec : MonoBehaviour {
 		return tick;
 	}
 
-	public void AutoGoldPerSec(){
-
+	public void AutoGoldPerSec() {
 		click.gold += GetGoldPerSec () / 10;
-
 	}
 
-	IEnumerator AutoTick(){
-	while (true) {
+	IEnumerator AutoTick() {
+		while (true) {
 			AutoGoldPerSec();
 			yield return new WaitForSeconds(0.10f);
 		}
 	}
-
-
 }

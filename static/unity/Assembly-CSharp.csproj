@@ -200,7 +200,6 @@
      <Compile Include="Assets\ClickerGame\Scripts\GoldPerSec.cs" />
      <Compile Include="Assets\ClickerGame\Scripts\ItemManager.cs" />
      <Compile Include="Assets\ClickerGame\Scripts\Menu.cs" />
-     <Compile Include="Assets\ClickerGame\Scripts\Pause.cs" />
      <Compile Include="Assets\ClickerGame\Scripts\UpgradeManager.cs" />
      <None Include="Assets\2DGamekit\Utilities\Shaders\NormalMappedSprite-Animated.shader" />
      <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

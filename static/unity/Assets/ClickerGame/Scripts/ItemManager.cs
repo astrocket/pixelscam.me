@@ -14,20 +14,12 @@ public class ItemManager : MonoBehaviour {
 	public Color affordable;
 	private Slider _slider;
 
-
-
-	void Start(){
+	void Start() {
 		baseCost = cost; 
 		_slider = GetComponentInChildren<Slider> ();
 	}
 
-
-
-	void Update(){
-
-
-
-
+	void Update() {
 		itemInfo.text = itemName + "\nCost: "+cost+"\nGold: "+tickValue+"/s";
 
 		/*if (click.gold >= cost) {
@@ -39,19 +31,14 @@ public class ItemManager : MonoBehaviour {
 		*/
 
 		_slider.value = click.gold / cost * 100;
+	}
 
-}
-
-
-	public void PurchasedItem(){
+	public void PurchasedItem() {
 		if (click.gold >= cost) {
 			click.gold -= cost;
 			count += 1;
 			cost = Mathf.Round( baseCost * Mathf.Pow (click.costmultiplier, count));
 
 		}
-	
-	
 	}
-
 }
