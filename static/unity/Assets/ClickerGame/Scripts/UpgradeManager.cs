@@ -12,9 +12,12 @@ public class UpgradeManager : MonoBehaviour {
 	public string itemName;
 	private float _newCost;
 	private Slider _slider;
+	private int _level = 0;
+	private Animator _animator;
 
 	void Start() {
 		_slider = GetComponentInChildren<Slider>();
+		_animator = GetComponent<Animator>();
 	}
 
 	void Update() {
@@ -29,6 +32,7 @@ public class UpgradeManager : MonoBehaviour {
 			click.goldperclick += clickPower;
 			cost = Mathf.Round (cost * click.costmultiplier);
 			_newCost = Mathf.Pow (cost, _newCost = cost);
+			_animator.SetInteger("Level", ++_level);
 		}
 	}
 }
