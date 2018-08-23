@@ -12,7 +12,7 @@ public class UpgradeManager : MonoBehaviour {
 	public string itemName;
 	private float _newCost;
 	private Slider _slider;
-	private int _level = 0;
+	private float _level = 0;
 	private Animator _animator;
 
 	void Start() {
@@ -30,9 +30,9 @@ public class UpgradeManager : MonoBehaviour {
 			click.gold -= cost;
 			count += 1;
 			click.goldperclick += clickPower;
-			cost = Mathf.Round (cost * click.costmultiplier);
-			_newCost = Mathf.Pow (cost, _newCost = cost);
-			_animator.SetInteger("Level", ++_level);
+			cost = Mathf.Round(cost * click.costmultiplier);
+			_newCost = Mathf.Pow(cost, _newCost = cost);
+			_animator.SetFloat("Level", ++_level);
 		}
 	}
 }
