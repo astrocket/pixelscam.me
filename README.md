@@ -20,8 +20,7 @@ npm install && npm run dev
 ## Resources
 - UI framework : [mobile.ant.design](https://mobile.ant.design/)
 - Unity assets
-  1. [2D Game Kit](https://assetstore.unity.com/packages/essentials/tutorial-projects/2d-game-kit-107098)
-  2. [Clicker Game](https://assetstore.unity.com/packages/templates/clicker-game-44293)
+  1. [Clicker Game](https://assetstore.unity.com/packages/templates/clicker-game-44293)
 
 ### Contributors
 - Astrocket

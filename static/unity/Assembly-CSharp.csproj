@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>4</LangVersion>
+    <LangVersion>6</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,7 +13,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_1;UNITY_2018_2;UNITY_2018;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_WEBGL;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_SPATIALTRACKING;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_POST_PROCESSING_STACK_V2</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_1;UNITY_2018_2;UNITY_2018;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_WEBGL;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_SPATIALTRACKING;ENABLE_IL2CPP;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_POST_PROCESSING_STACK_V2</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -53,184 +53,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\2DGamekit\Scripts\AI\BT.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\AI\GunnerBeam.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\AI\GunnerBeamController.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\AI\GunnerProjectile.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\AI\InstantiateObject.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\AI\MissileGolem.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\AI\SendSignal.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Audio\AudioSurface.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Audio\BackgroundMusicPlayer.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Audio\MixerSliderLink.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Audio\RandomAudioPlayer.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\MonoBehaviours\Bullet.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\MonoBehaviours\BulletPool.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\MonoBehaviours\CharacterController2D.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\MonoBehaviours\Damageable.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\MonoBehaviours\Damager.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\MonoBehaviours\EnemyBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\MonoBehaviours\InputComponent.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\MonoBehaviours\PlayerCharacter.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\MonoBehaviours\PlayerInput.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\MonoBehaviours\SpitterBT.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\MonoBehaviours\VFXController.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Enemies\ChomperAttackSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Enemies\ChomperDeathSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Enemies\ChomperPatrolSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Enemies\ChomperRunToTargetSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\AirborneMeleeAttackSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\AirborneSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\AirborneWithGunSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\CrouchSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\CrouchWithGunSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\DeadLandingSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\DeadSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\HurtSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\LocomotionSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\LocomotionWithGunSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\MeleeAttackSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\PushingSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\RespawnSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\SceneLinkedSMB.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Character\StateMachineBehaviours\Player\TriggerVFX.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\CameraShaker.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\Checkpoint.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\InteractOnButton.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\InteractOnButton2D.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\InteractOnCollision.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\InteractOnCollision2D.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\InteractOnTrigger.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\InteractOnTrigger2D.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\InventoryController.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\InventoryItem.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\LayerMaskExtensions.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\ObjectPool.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Core\TimedDisabling.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Effect\BossDoorStateManager.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Effect\DropShadow.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Effect\Grenade.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Effect\GunnerLightning.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Effect\GunnerShieldEffect.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Effect\SpriteColorChange.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Effect\WaterArea.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Localization\OriginalPhrases.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Localization\TranslatedPhrases.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Localization\TranslatedText.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Localization\Translator.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Objects\EnemySpawner.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Objects\HealthPickup.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Objects\HubDoor.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Objects\ObjectPositionResetter.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Objects\Platforms\FallthroughReseter.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Objects\Platforms\MovingPlatform.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Objects\Platforms\PlatformCatcher.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Objects\Pushables\PressurePad.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Objects\Pushables\Pushable.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Objects\WeaponPickup.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\CharacterStateSetter.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\GameObjectTeleporter.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\IDataPersister.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\PersistentDataManager.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\SavedData.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\SceneController.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\SceneControllerWrapper.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\SceneNameAttribute.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\SceneTransitionDestination.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\ScreenFader.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\TransitionPoint.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Timeline\DirectorTrigger.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Timeline\ScrollingText\ScrollingTextBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Timeline\ScrollingText\ScrollingTextClip.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Timeline\ScrollingText\ScrollingTextMixerBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Timeline\ScrollingText\ScrollingTextTrack.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\UI\HealthUI.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\UI\InputDisplayUI.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\UI\KeyUI.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\UI\MenuActivityController.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\UI\OptionUI.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\UI\StartUI.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\AutoCameraSetup.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\DialogueCanvasController.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\Helpers.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\LocalTransformDuplicator.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\OpenURL.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\PhysicsHelper.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\PrewarmDirector.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\PriorityQueue.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\RuleTile.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\SetMaterialRenderQueue.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\StartScreenSpriteOffsetter.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\UIAutoscroll.cs" />
-     <Compile Include="Assets\2DGamekit\Scripts\Utility\VisibleBubbleUp.cs" />
-     <Compile Include="Assets\2DGamekit\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\CinemachinePostProcessingV2\CinemachinePostProcessing.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\LightControl\LightControlBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\LightControl\LightControlClip.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\LightControl\LightControlMixerBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\LightControl\LightControlTrack.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlClip.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlMixerBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\NavMeshAgentControl\NavMeshAgentControlTrack.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\ScreenFader\ScreenFaderBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\ScreenFader\ScreenFaderClip.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\ScreenFader\ScreenFaderMixerBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\ScreenFader\ScreenFaderTrack.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TextSwitcher\TextSwitcherBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TextSwitcher\TextSwitcherClip.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TextSwitcher\TextSwitcherMixerBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TextSwitcher\TextSwitcherTrack.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TimeDilation\TimeDilationBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TimeDilation\TimeDilationClip.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TimeDilation\TimeDilationMixerBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TimeDilation\TimeDilationTrack.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TransformTween\TransformTweenBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TransformTween\TransformTweenClip.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TransformTween\TransformTweenMixerBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TransformTween\TransformTweenTrack.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\Video\VideoPlayableBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\Video\VideoSchedulerPlayableBehaviour.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\Video\VideoScriptPlayableAsset.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\Video\VideoScriptPlayableTrack.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
-     <Compile Include="Assets\2DGamekit\Utilities\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
      <Compile Include="Assets\ClickerGame\Scripts\Click.cs" />
      <Compile Include="Assets\ClickerGame\Scripts\CurrencyManager.cs" />
      <Compile Include="Assets\ClickerGame\Scripts\GoldPerSec.cs" />
      <Compile Include="Assets\ClickerGame\Scripts\ItemManager.cs" />
-     <Compile Include="Assets\ClickerGame\Scripts\Menu.cs" />
      <Compile Include="Assets\ClickerGame\Scripts\UpgradeManager.cs" />
-     <None Include="Assets\2DGamekit\Utilities\Shaders\NormalMappedSprite-Animated.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\2DGamekit\Utilities\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
-     <None Include="Assets\2DGamekit\2DGameKit_Third-PartyNotice.txt" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\2DGamekit\Utilities\Shaders\NormalMappedSprite.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Sprites\EmojiOne_License.txt" />
-     <None Include="Assets\2DGamekit\Utilities\Shaders\Particle Standard Unlit.shader" />
-     <None Include="Assets\2DGamekit\Utilities\Shaders\Shield.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\2DGamekit\Utilities\Shaders\Water.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\2DGamekit\Utilities\Shaders\UnityStandardParticleShadow.cginc" />
-     <None Include="Assets\2DGamekit\Utilities\Shaders\UnityStandardParticles.cginc" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\2DGamekit\Utilities\Fonts\Rajdhani\RajdhaniFontLicense.txt" />
-     <None Include="Assets\2DGamekit\Utilities\Shaders\NormalMappedTile.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-     <None Include="Assets\2DGamekit\Utilities\Shaders\FrostedGlass.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\2DGamekit\Utilities\Shaders\NormalMappedTileAnimated.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
-     <None Include="Assets\2DGamekit\Utilities\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
  <Reference Include="Cinemachine">
  <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
@@ -457,31 +284,349 @@
  <HintPath>/Users/hexoul/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
- <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
  </Reference>
  <Reference Include="System">
- <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
  </Reference>
  <Reference Include="System.Core">
- <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
  </Reference>
  <Reference Include="System.Runtime.Serialization">
- <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="System.Xml">
- <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
  </Reference>
  <Reference Include="System.Xml.Linq">
- <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics.Vectors">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Win32.Primitives">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.AppContext">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Concurrent">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.NonGeneric">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Specialized">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Annotations">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.EventBasedAsync">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Primitives">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.TypeConverter">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Console">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data.Common">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Contracts">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Debug">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.FileVersionInfo">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Process">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.StackTrace">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TextWriterTraceListener">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tools">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TraceSource">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Primitives">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Dynamic.Runtime">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Calendars">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.ZipFile">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.DriveInfo">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Primitives">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Watcher">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.IsolatedStorage">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.MemoryMappedFiles">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Pipes">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.UnmanagedMemoryStream">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Expressions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Parallel">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Queryable">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http.Rtc">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NameResolution">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NetworkInformation">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Ping">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Primitives">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Requests">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Security">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Sockets">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebHeaderCollection">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets.Client">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ObjectModel">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit.ILGeneration">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit.Lightweight">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Primitives">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Reader">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.ResourceManager">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Writer">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.CompilerServices.VisualC">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Handles">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Numerics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Formatters">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Json">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Primitives">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Xml">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Claims">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Algorithms">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Csp">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Encoding">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Primitives">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.X509Certificates">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Principal">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.SecureString">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Duplex">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Http">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.NetTcp">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Primitives">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Security">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.RegularExpressions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Overlapped">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks.Parallel">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Thread">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.ThreadPool">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Timer">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ValueTuple">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.ReaderWriter">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XDocument">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath.XDocument">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlDocument">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlSerializer">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+ </Reference>
+ <Reference Include="netstandard">
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
  </Reference>
  <Reference Include="UnityScript">
- <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityScript.Lang">
- <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
  </Reference>
  <Reference Include="Boo.Lang">
- <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

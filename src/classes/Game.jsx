@@ -12,6 +12,11 @@ class Game extends Component {
       "/static/unity/Build/Build.json",
       "/static/unity/Build/UnityLoader.js"
     );
+
+    this.unityContent.on("Say", (message) => {
+      console.log('GOTIT', message);
+      //this.unityContent.send("Click", "Echo", message);
+    });
   }
 
   render() {

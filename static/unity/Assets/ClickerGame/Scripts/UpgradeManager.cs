@@ -12,29 +12,17 @@ public class UpgradeManager : MonoBehaviour {
 	public string itemName;
 	private float _newCost;
 	private Slider _slider;
+	private float _level = 0;
+	private Animator _animator;
 
 	void Start() {
-		_slider = GetComponentInChildren<Slider> ();
+		_slider = GetComponentInChildren<Slider>();
+		_animator = GetComponent<Animator>();
 	}
 
 	void Update() {
-	
-		/*itemInfo.text = itemName + "\nCost: " + cost + "\nCount: "+count+ "\nPower: "+clickPower;
-		if (click.gold >= cost) {
-			GetComponent<Image> ().color = affordable;
-		} else {
-			GetComponent<Image> ().color = standard;
-		
-			}
-			*/
-
 		_slider.value = click.gold / cost * 100;
 		itemInfo.text = itemName + "\nCost: " + cost + "\nCount: "+count+ "\nPower: "+clickPower;
-		if (_slider.value >= 100) {
-
-		} else {
-
-		}	
 	}
 
 	public void PurchasedUpdate() {
@@ -42,8 +30,9 @@ public class UpgradeManager : MonoBehaviour {
 			click.gold -= cost;
 			count += 1;
 			click.goldperclick += clickPower;
-			cost = Mathf.Round (cost * click.costmultiplier);
-			_newCost = Mathf.Pow (cost, _newCost = cost);
+			cost = Mathf.Round(cost * click.costmultiplier);
+			_newCost = Mathf.Pow(cost, _newCost = cost);
+			_animator.SetFloat("Level", ++_level);
 		}
 	}
 }

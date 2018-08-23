@@ -11,7 +11,7 @@ public class CurrencyManager : MonoBehaviour {
 	}
 
 	void Awake() {
-		CreateInstance ();
+		CreateInstance();
 	}
 
 	void CreateInstance() {
