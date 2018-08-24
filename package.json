@@ -1,7 +1,7 @@
 {
   "name": "pixelscam.me",
   "version": "0.1.0",
-  "description": "Crypto circus for ponzies, scammers, dumpers and you.",
+  "description": "Colonize pixel with minable token",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
@@ -15,12 +15,11 @@
   },
   "keywords": [
     "crypto",
-    "blockchian",
+    "blockchain",
     "dapp",
-    "game",
-    "ad"
+    "game"
   ],
-  "author": "Scammers",
+  "author": "pixelscam",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/astrocket/pixelscam.me/issues"
