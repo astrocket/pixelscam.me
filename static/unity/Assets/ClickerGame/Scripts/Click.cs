@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
+using Loom.Client;
 
 public class Click : MonoBehaviour {
 
@@ -42,4 +44,33 @@ public class Click : MonoBehaviour {
 	public void Echo(string str) {
 		Hodl("hodl");
 	}
+
+	async Task<Contract> GetContract(byte[] privateKey, byte[] publicKey)
+    {
+        var writer = RpcClientFactory.Configure()
+            .WithLogger(Debug.unityLogger)
+            .WithHTTP("http://127.0.0.1:46658/rpc")
+            //.WithWebSocket("ws://127.0.0.1:46657/websocket")
+            .Create();
+
+        var reader = RpcClientFactory.Configure()
+            .WithLogger(Debug.unityLogger)
+            .WithHTTP("http://127.0.0.1:46658/query")
+            //.WithWebSocket("ws://127.0.0.1:9999/queryws")
+            .Create();
+
+        var client = new DAppChainClient(writer, reader)
+        {
+            Logger = Debug.unityLogger
+        };
+        // required middleware
+        client.TxMiddleware = new TxMiddleware(new ITxMiddlewareHandler[]{
+            new NonceTxMiddleware(publicKey, client),
+            new SignedTxMiddleware(privateKey)
+        });
+
+        var contractAddr = await client.ResolveContractAddressAsync("BluePrint");
+        var callerAddr = Address.FromPublicKey(publicKey);
+        return new Contract(client, contractAddr, callerAddr);
+    }
 }

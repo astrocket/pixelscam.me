@@ -58,6 +58,8 @@
      <Compile Include="Assets\ClickerGame\Scripts\GoldPerSec.cs" />
      <Compile Include="Assets\ClickerGame\Scripts\ItemManager.cs" />
      <Compile Include="Assets\ClickerGame\Scripts\UpgradeManager.cs" />
+     <None Include="Assets\LoomSDK\Plugins\Loom.Nethereum.Minimal.Packed.xml" />
+     <None Include="Assets\LoomSDK\Plugins\Loom.Google.Protobuf.xml" />
  <Reference Include="Cinemachine">
  <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
@@ -282,6 +284,24 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>/Users/hexoul/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Loom.Google.Protobuf">
+ <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Assets/LoomSDK/Plugins/Loom.Google.Protobuf.dll</HintPath>
+ </Reference>
+ <Reference Include="Loom.websocket-sharp">
+ <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Assets/LoomSDK/Plugins/Loom.websocket-sharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Loom.Nethereum.Minimal.Packed">
+ <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Assets/LoomSDK/Plugins/Loom.Nethereum.Minimal.Packed.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics">
+ <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Assets/LoomSDK/Plugins/System.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="Loom.Chaos.NaCl">
+ <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Assets/LoomSDK/Plugins/Loom.Chaos.NaCl.dll</HintPath>
+ </Reference>
+ <Reference Include="Loom.Newtonsoft.Json">
+ <HintPath>/Users/hexoul/Documents/pixelscam/static/unity/Assets/LoomSDK/Plugins/Loom.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -628,6 +648,12 @@
  <Reference Include="Boo.Lang">
  <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="LoomSDK.Editor.csproj">
+      <Project>{09F34914-5E02-00B1-05A2-C75B14EB4BDE}</Project>      <Name>LoomSDK.Editor</Name>    </ProjectReference>
+    <ProjectReference Include="LoomSDK.csproj">
+      <Project>{CD068C32-31E7-46B2-CD32-AFD8DD178338}</Project>      <Name>LoomSDK</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
