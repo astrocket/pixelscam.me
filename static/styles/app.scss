@@ -1,0 +1,62 @@
+@import './_variables.scss';
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-loading {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pixel-container {
+  width: 100%;
+  height: 50vh;
+  background-image: url("/static/images/cosmos.jpg");
+  background-position: center;
+  .pixel-panel {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    h1 {
+      color: white;
+    }
+  }
+  .pixel-board {
+    height: 50vh;
+    width: calc( (50vh * 2) - $pixel-border-width );
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: $pixel-border;
+    .pixel-unit {
+      width: calc( (((50vh * 2) - $pixel-border-width ) / 50) - $pixel-border-width );
+      height: calc( (((50vh * 2) - $pixel-border-width ) / 50) - $pixel-border-width );
+      background-color: transparent;
+      border-right: $pixel-border;
+      border-bottom: $pixel-border;
+    }
+  }
+}
+
+.game-container {
+  width: 100%;
+  height: 50vh;
+  position: fixed;
+  bottom: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

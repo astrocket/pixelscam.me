@@ -17,6 +17,14 @@ class Game extends Component {
       console.log('GOTIT', message);
       //this.unityContent.send("Click", "Echo", message);
     });
+
+    this.unityContent.on("progress", progression => {
+      this.props.appActions.setUnityProgress(progression);
+    });
+
+    this.unityContent.on("loaded", () => {
+      this.props.appActions.setGameLoading(false);
+    });
   }
 
   render() {
